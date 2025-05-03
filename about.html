@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hindu YUVA at Virginia Tech</title>
+    <script src="https://cdn.tailwindcss.com"></script> <!-- Tailwind CDN -->
+    <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&family=Roboto:wght@400;700&display=swap"
+        rel="stylesheet">
+    <style>
+        @keyframes fadeIn {
+            0% {
+                opacity: 0;
+            }
+
+            100% {
+                opacity: 1;
+            }
+        }
+
+
+        @keyframes glowing {
+            0% {
+                text-shadow: 0 0 5px #FF6600, 0 0 10px #FF6600, 0 0 15px #FF6600, 0 0 20px #FF6600;
+            }
+
+            50% {
+                text-shadow: 0 0 10px #FF6600, 0 0 20px #FF6600, 0 0 30px #FF6600, 0 0 40px #FF6600;
+            }
+
+            100% {
+                text-shadow: 0 0 5px #FF6600, 0 0 10px #FF6600, 0 0 15px #FF6600, 0 0 20px #FF6600;
+            }
+        }
+
+        .fade-in {
+            animation: fadeIn 2s ease-out;
+        }
+
+        .glowing-text {
+            animation: glowing 1.5s infinite alternate;
+            color: #FF6600;
+        }
+
+        /* Bounce animation for hover effect */
+        @keyframes hoverBounce {
+
+            0%,
+            100% {
+                transform: translateY(0);
+            }
+
+            50% {
+                transform: translateY(-8px);
+            }
+        }
+
+        .hover-bounce:hover {
+            animation: hoverBounce 0.5s ease-in-out;
+        }
+    </style>
+</head>
+
+<body class="bg-[#FFF3E0] font-roboto">
+
+    <nav class="bg-[#FEFCF6] p-4 shadow-md flex items-center justify-between">
+
+        <div class="flex items-center space-x-3">
+
+            <a href="./index.html">
+                <img src="./assets/logo.png" alt="Hindu YUVA Logo"
+                    class="h-10 w-10 object-contain square-full hover-bounce">
+            </a>
+
+            <span class="text-black text-xl font-bold hover-bounce">Hindu YUVA at VT</span>
+        </div>
+
+
+        <ul class="flex space-x-6 text-white font-medium">
+            <li><a href="./index.html"
+                    class="transition-all duration-300 transform text-black hover:text-orange-600 hover-bounce">Home</a>
+            </li>
+            <li><a href="./members.html"
+                    class="transition-all duration-300 transform text-black hover:text-orange-600 hover-bounce">Members</a>
+            </li>
+            <li><a href="./tickets.html"
+                    class="transition-all duration-300 transform text-black hover:text-orange-600 hover-bounce">Tickets/Donate</a>
+            </li>
+        </ul>
+    </nav>
+
+
+    <div class="container mx-auto p-8 fade-in">
+        <div class="container mx-auto mt-10 px-6">
+            <h1 class="text-4xl font-bold text-center text-[#FF6600] mb-6 animate__animated animate__fadeInUp">
+                About Hindu YUVA at Virginia Tech
+            </h1>
+
+
+            <div class="w-full max-w-5xl mx-auto space-y-12">
+
+
+                <div class="p-8 bg-white shadow-xl rounded-2xl border border-orange-200">
+                    <h2
+                        class="text-3xl text-center text-[#FF6600] font-semibold mb-4 animate__animated animate__fadeInUp">
+                        Our Mission</h2>
+                    <p class="text-lg text-gray-700 text-center mb-6 animate__animated animate__fadeInUp">
+                        The mission of The Virginia Tech Hindu YUVA organization (Registered Student Organization - RSO)
+                        is to bring together both Hindu and non-Hindu students to raise awareness about Hinduism.
+                        As one of the largest and oldest religions in the world, we believe it is necessary that there
+                        be an organization on campus to represent the interests of the Hindu community present here.
+                    </p>
+                    <p class="text-lg text-gray-700 text-center mb-6 animate__animated animate__fadeInUp">
+                        We hope to create a comfortable atmosphere where students can come and celebrate their culture.
+                        We aim to achieve these goals by having team-building games, yoga and meditation, lively
+                        debates, and presentations at our weekly meetings.
+                    </p>
+                    <p class="text-lg text-gray-700 text-center mb-6 animate__animated animate__fadeInUp">
+                        All in all, we want to build a small Hindu community within Virginia Tech so that students can
+                        come and discover a home away from home.
+                    </p>
+                </div>
+
+                <!-- type type -->
+                <div class="p-8 bg-white shadow-xl rounded-2xl border border-orange-200">
+                    <h3
+                        class="text-2xl text-center text-[#FF6600] font-semibold mb-4 animate__animated animate__fadeInUp">
+                        Our Events</h3>
+                    <ul
+                        class="text-lg text-gray-700 list-disc pl-6 space-y-4 animate__animated animate__fadeInUp max-w-xl mx-auto text-left">
+                        <li><strong>Hang with HY:</strong> Weekly gatherings for Hindu students to connect.</li>
+                        <li><strong>Major Events:</strong> Celebrations of Hindu festivals like Diwali, Ganesh
+                            Chaturthi, and New Year.</li>
+                        <li><strong>Minor Events:</strong> Collaborations with other campus organizations and community
+                            outreach programs.</li>
+                    </ul>
+                </div>
+
+
+                <section class="mt-10 text-center p-8 bg-white shadow-xl rounded-2xl border border-orange-200">
+                    <h2 class="text-3xl font-semibold text-[#FF6600] mb-6 animate__animated animate__fadeInUp">Contact
+                        Us</h2>
+
+
+                    <div
+                        class="flex items-center justify-center gap-4 mb-4 group animate__animated animate__fadeInUp transition-all duration-300">
+                        <i
+                            class="fas fa-envelope text-2xl text-[#FF6600] group-hover:text-[#FF4D00] transition duration-300"></i>
+                        <a href="mailto:vthinduyuva@gmail.com"
+                            class="text-lg text-[#FF6600] group-hover:text-[#FF4D00] transition duration-300">
+                            vthinduyuva@gmail.com
+                        </a>
+                    </div>
+
+                    <!-- Instagram Contact -->
+                    <div
+                        class="flex items-center justify-center gap-4 mb-4 group animate__animated animate__fadeInUp transition-all duration-300">
+                        <i
+                            class="fab fa-instagram text-2xl text-[#FF6600] group-hover:text-[#FF4D00] transition duration-300"></i>
+                        <a href="https://www.instagram.com/hinduyuvavt/" target="_blank"
+                            class="text-lg text-[#FF6600] group-hover:text-[#FF4D00] transition duration-300">
+                            @hinduyuvavt
+                        </a>
+                    </div>
+
+                    <!-- GobblerConnect Contact -->
+                    <div
+                        class="flex items-center justify-center gap-4 mb-4 group animate__animated animate__fadeInUp transition-all duration-300">
+                        <i
+                            class="fas fa-link text-2xl text-[#FF6600] group-hover:text-[#FF4D00] transition duration-300"></i>
+                        <a href="https://gobblerconnect.vt.edu/organization/vt_hinduyuva"
+                            class="text-lg text-[#FF6600] group-hover:text-[#FF4D00] transition duration-300">
+                            GobblerConnect
+                        </a>
+                    </div>
+                </section>
+
+
+            </div>
+        </div>
+    </div>
+
+    <footer class="bg-[#FF6600] p-4 mt-10 text-center text-white shadow-lg">
+        <p>&copy; Hindu YUVA at Virginia Tech</p>
+    </footer>
+</body>
+
+</html>

@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hindu YUVA at Virginia Tech</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        @keyframes fadeIn {
+            0% { opacity: 0; }
+            100% { opacity: 1; }
+        }
+
+        @keyframes glowing {
+            0%, 100% {
+                text-shadow: 0 0 5px #FF6600, 0 0 10px #FF6600, 0 0 15px #FF6600, 0 0 20px #FF6600;
+            }
+            50% {
+                text-shadow: 0 0 10px #FF6600, 0 0 20px #FF6600, 0 0 30px #FF6600, 0 0 40px #FF6600;
+            }
+        }
+
+        .fade-in { animation: fadeIn 2s ease-out; }
+        .glowing-text { animation: glowing 1.5s infinite alternate; color: #FF6600; }
+
+        @keyframes hoverBounce {
+            0%, 100% { transform: translateY(0); }
+            50% { transform: translateY(-8px); }
+        }
+
+        .hover-bounce:hover { animation: hoverBounce 0.5s ease-in-out; }
+    </style>
+</head>
+
+<body class="bg-[#FFF3E0] font-roboto">
+
+    <nav class="bg-[#FEFCF6] p-4 shadow-md flex items-center justify-between">
+        <div class="flex items-center space-x-3">
+            <a href="./index.html">
+                <img src="./assets/logo.png" alt="Hindu YUVA Logo" class="h-10 w-10 object-contain square-full hover-bounce">
+            </a>
+            <span class="text-black text-xl font-bold hover-bounce">Hindu YUVA at VT</span>
+        </div>
+
+        <ul class="flex space-x-6 text-white font-medium">
+            <li><a href="./index.html" class="text-black hover:text-orange-600 hover-bounce">Home</a></li>
+            <li><a href="./members.html" class="text-black hover:text-orange-600 hover-bounce">Members</a></li>
+            <li><a href="./tickets.html" class="text-black hover:text-orange-600 hover-bounce">Tickets/Donate</a></li>
+        </ul>
+    </nav>
+
+    <div class="container mx-auto p-8 fade-in">
+        <div class="container mx-auto px-4 py-10">
+            <h1 class="text-4xl font-extrabold font-sans text-center text-[#FF6600] mb-12">Meet Our Team</h1>
+
+            <div class="flex flex-col items-center space-y-10">
+                <!-- President -->
+                <div class="relative group">
+                    <div class="w-48 h-50 bg-white shadow-lg rounded-xl px-6 py-4 text-center border-2 border-[#FF6600] hover:scale-110 hover:shadow-2xl hover:bg-orange-100 transition-transform duration-300 ease-in-out">
+                        <img src="./assets/members/rushi.png" class="w-16 h-16 rounded-full mx-auto mb-2 object-cover" />
+                        <h2 class="text-xl font-bold font-sans text-[#FF6600]">President</h2>
+                        <p class="text-lg font-serif text-gray-700">Rushi</p>
+                    </div>
+                    <div class="absolute top-full left-1/2 transform -translate-x-1/2 h-10 w-1 bg-[#FF6600]"></div>
+                </div>
+
+                <!-- Level 2 -->
+                <div class="flex justify-center gap-8 relative">
+                    <div class="absolute top-0 left-0 w-full h-1 bg-[#FF6600] z-0"></div>
+
+                    <!-- Officers -->
+                    <div class="relative z-10">
+                        <div class="w-48 h-50 bg-white shadow-lg rounded-xl px-6 py-4 text-center border-2 border-[#FF6600] hover:scale-110 hover:shadow-2xl hover:bg-orange-100 transition-transform duration-300 ease-in-out">
+                            <img src="./assets/members/harshita.png" class="w-16 h-16 rounded-full mx-auto mb-2 object-cover" />
+                            <h2 class="text-lg font-bold text-[#FF6600]">Marketing Chair</h2>
+                            <p class="text-lg text-gray-700">Harshitha</p>
+                        </div>
+                    </div>
+
+                    <div class="relative z-10">
+                        <div class="w-48 h-50 bg-white shadow-lg rounded-xl px-6 py-4 text-center border-2 border-[#FF6600] hover:scale-110 hover:shadow-2xl hover:bg-orange-100 transition-transform duration-300 ease-in-out">
+                            <img src="./assets/members/shreel.png" class="w-16 h-16 rounded-full mx-auto mb-2 object-cover" />
+                            <h2 class="text-lg font-bold text-[#FF6600]">Treasurer</h2>
+                            <p class="text-lg text-gray-700">Shreel</p>
+                        </div>
+                    </div>
+
+                    <div class="relative z-10">
+                        <div class="w-48 h-50 bg-white shadow-lg rounded-xl px-6 py-4 text-center border-2 border-[#FF6600] hover:scale-110 hover:shadow-2xl hover:bg-orange-100 transition-transform duration-300 ease-in-out">
+                            <img src="./assets/members/risha.jpg" class="w-16 h-16 rounded-full mx-auto mb-2 object-cover" />
+                            <h2 class="text-lg font-bold text-[#FF6600]">VH Coordinator</h2>
+                            <p class="text-lg text-gray-700">Eisha</p>
+                        </div>
+                    </div>
+
+                    <div class="relative z-10">
+                        <div class="w-48 h-50 bg-white shadow-lg rounded-xl px-6 py-4 text-center border-2 border-[#FF6600] hover:scale-110 hover:shadow-2xl hover:bg-orange-100 transition-transform duration-300 ease-in-out">
+                            <img src="./assets/members/siya.png" class="w-16 h-16 rounded-full mx-auto mb-2 object-cover" />
+                            <h2 class="text-lg font-bold text-[#FF6600]">Events Co-Chair</h2>
+                            <p class="text-lg text-gray-700">Siya</p>
+                        </div>
+                    </div>
+
+                    <div class="relative z-10">
+                        <div class="w-48 h-50 bg-white shadow-lg rounded-xl px-6 py-4 text-center border-2 border-[#FF6600] hover:scale-110 hover:shadow-2xl hover:bg-orange-100 transition-transform duration-300 ease-in-out">
+                            <img src="./assets/members/ria.png" class="w-16 h-16 rounded-full mx-auto mb-2 object-cover" />
+                            <h2 class="text-lg font-bold text-[#FF6600]">Events Co-Chair</h2>
+                            <p class="text-lg text-gray-700">Ria</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Unconnected Members -->
+                <div class="grid grid-cols-3 gap-8 mt-10">
+                    <!-- Repeat this for each unconnected member -->
+                    <!-- EXAMPLES -->
+                    <div class="w-48 h-50 bg-white shadow-lg rounded-xl px-6 py-4 text-center border-2 border-[#FF6600] hover:scale-110 hover:shadow-2xl hover:bg-orange-100 transition-transform duration-300 ease-in-out">
+                        <img src="./assets/members/amirtha.jpeg" class="w-16 h-16 rounded-full mx-auto mb-2 object-cover" />
+                        <h2 class="text-lg font-bold text-[#FF6600]">Secretary</h2>
+                        <p class="text-lg text-gray-700">Amirtha</p>
+                    </div>
+
+                    <div class="w-48 h-50 bg-white shadow-lg rounded-xl px-6 py-4 text-center border-2 border-[#FF6600] hover:scale-110 hover:shadow-2xl hover:bg-orange-100 transition-transform duration-300 ease-in-out">
+                        <img src="./assets/members/aashma.png" class="w-16 h-16 rounded-full mx-auto mb-2 object-cover" />
+                        <h2 class="text-lg font-bold text-[#FF6600]">VH Funding Coordinator</h2>
+                        <p class="text-lg text-gray-700">Aashma</p>
+                    </div>
+
+                    <div class="w-48 h-50 bg-white shadow-lg rounded-xl px-6 py-4 text-center border-2 border-[#FF6600] hover:scale-110 hover:shadow-2xl hover:bg-orange-100 transition-transform duration-300 ease-in-out">
+                        <img src="./assets/members/dhruva.png" class="w-16 h-16 rounded-full mx-auto mb-2 object-cover" />
+                        <h2 class="text-lg font-bold text-[#FF6600]">Religious Coordinator</h2>
+                        <p class="text-lg text-gray-700">Dhruva</p>
+                    </div>
+
+                    <div class="w-48 h-50 bg-white shadow-lg rounded-xl px-6 py-4 text-center border-2 border-[#FF6600] hover:scale-110 hover:shadow-2xl hover:bg-orange-100 transition-transform duration-300 ease-in-out">
+                        <img src="./assets/members/nischay.png" class="w-16 h-16 rounded-full mx-auto mb-2 object-cover" />
+                        <h2 class="text-lg font-bold text-[#FF6600]">Temple Coordinator</h2>
+                        <p class="text-lg text-gray-700">Nishchay</p>
+                    </div>
+
+                    <div class="w-48 h-50 bg-white shadow-lg rounded-xl px-6 py-4 text-center border-2 border-[#FF6600] hover:scale-110 hover:shadow-2xl hover:bg-orange-100 transition-transform duration-300 ease-in-out">
+                        <img src="./assets/members/WhatsApp Image 2025-05-02 at 11.18.56 PM.jpeg" class="w-16 h-16 rounded-full mx-auto mb-2 object-cover" />
+                        <h2 class="text-lg font-bold text-[#FF6600]">Hang With HY Coordinator</h2>
+                        <p class="text-lg text-gray-700">Ashrith</p>
+                    </div>
+
+                    <div class="w-48 h-50 bg-white shadow-lg rounded-xl px-6 py-4 text-center border-2 border-[#FF6600] hover:scale-110 hover:shadow-2xl hover:bg-orange-100 transition-transform duration-300 ease-in-out">
+                        <img src="./assets/members/unconnected5.jpg" class="w-16 h-16 rounded-full mx-auto mb-2 object-cover" />
+                        <h2 class="text-lg font-bold text-[#FF6600]">Senior Advisor</h2>
+                        <p class="text-lg text-gray-700">Chhavi</p>
+                    </div>
+
+                    <div class="w-48 h-50 bg-white shadow-lg rounded-xl px-6 py-4 text-center border-2 border-[#FF6600] hover:scale-110 hover:shadow-2xl hover:bg-orange-100 transition-transform duration-300 ease-in-out">
+                        <img src="./assets/members/prakhar.png" class="w-16 h-16 rounded-full mx-auto mb-2 object-cover" />
+                        <h2 class="text-lg font-bold text-[#FF6600]">Finance Advisor</h2>
+                        <p class="text-lg text-gray-700">Prakhar</p>
+                    </div>
+
+                    <div class="w-48 h-50 bg-white shadow-lg rounded-xl px-6 py-4 text-center border-2 border-[#FF6600] hover:scale-110 hover:shadow-2xl hover:bg-orange-100 transition-transform duration-300 ease-in-out">
+                        <img src="./assets/members/" class="w-16 h-16 rounded-full mx-auto mb-2 object-cover" />
+                        <h2 class="text-lg font-bold text-[#FF6600]">Finance Advisor</h2>
+                        <p class="text-lg text-gray-700">Soham</p>
+                    </div>
+
+                    <div class="w-48 h-50 bg-white shadow-lg rounded-xl px-6 py-4 text-center border-2 border-[#FF6600] hover:scale-110 hover:shadow-2xl hover:bg-orange-100 transition-transform duration-300 ease-in-out">
+                        <img src="./assets/members/unconnected6.jpg" class="w-16 h-16 rounded-full mx-auto mb-2 object-cover" />
+                        <h2 class="text-lg font-bold text-[#FF6600]">Advisor</h2>
+                        <p class="text-lg text-gray-700">Sunit</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer class="bg-[#FF6600] p-4 mt-10 text-center text-white shadow-lg">
+        <p>&copy; Hindu YUVA at Virginia Tech</p>
+    </footer>
+</body>
+
+</html>
